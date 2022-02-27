@@ -1,0 +1,257 @@
+body,html{
+	height: 100%;
+	margin: 0;
+	font-size: 16px;
+	font-family: "Lato",sans-serif;
+	font-weight: 400;
+	line-height: 1.8em;
+	color: #006666;
+}
+
+#header
+{
+    position:absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    padding: 2% 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#header .logo
+{
+    color: #161623;
+    font-weight:700 ;
+    font-size: 2em;
+    text-decoration: none;
+ 
+}
+#header ul
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+#header ul li
+{
+    list-style: none;
+    margin-left: px;
+}
+#header ul  a
+{
+    font-size: 2vw;
+    font-weight: 600;
+    text-decoration: none;
+    padding: 6px 15px;
+    color: #ffffff;
+    border-radius:20px ;
+    z-index: 100;
+	margin: 2px;
+    background:#374955;
+	border: 5px solid white;
+
+
+
+}
+#header ul  a:hover,
+#header ul  a.active
+{
+    background:#F62A66;
+    color: #374955;
+}
+
+/* -----------------ID card----------------------------- */
+#idcard_section{
+	background-color:#374955;
+	width: 100vw;
+	height: 100vh;
+}
+.idcard{
+	background-color: beige;
+	width: 500px;
+	height: 300px;
+	border-radius: 10px;
+	margin: 100px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	transform: rotate(-30deg) skew(25deg);
+	box-shadow: 0 16px 32px 0 rgba(0, 0, 0, 0.308), 0 6px 60px 0 rgba(0, 0, 0, 0.178); 
+}
+.border_green{
+	width: 97%;
+	height:95%;
+	margin: 5px;
+	margin-top: 5px;
+	background-color: greenyellow;
+	border-radius: 10px;
+}
+.main_container{
+	width: 98%;
+	height:97%;
+	margin: 5px;
+	margin-top: 5px;
+	background-color: white;
+	border-radius: 10px;
+}
+.top{
+	display: flex;
+}
+.row{
+	display: flex;
+}
+
+.column{
+	display: flex;
+	flex-direction: column;
+}
+
+.main_container h3{
+	font-size: small;
+	color: black;
+	padding: 0px;
+	margin: 0px;
+}
+.main_container .top .logo{
+background-color: #006666;
+}
+.main_container .middle img{
+	width: 20%;
+	margin:20px;
+	margin-left: 0px;
+	border-radius: 10px;
+}
+.top .logo{
+	width: 15%;
+	margin-right: 5%;
+}
+.green_line{
+	background-color: greenyellow;
+	width: 100%;
+	height: 2px;
+}
+.middle h2{
+	align-self: center;
+	color: red;
+	padding: 0px;
+	margin: 0px;
+	transform: rotate(-90deg);
+	width: fit-content;
+	height: fit-content;
+}
+.middle{
+	position: relative;
+}
+.middle h3{
+	font-weight: bold;
+	color: black;
+}
+.bottom h3{
+	color: cornflowerblue;
+	font-weight: bolder;
+}
+.heading_title{
+    position: absolute;
+    right: 0;
+width: 50%;
+}
+.heading_title h1{
+    width: fit-content;
+    padding-top: 13%;
+    padding-left: 10%;
+    font-family: "Lato",sans-serif;
+    font-size: 5em;
+    font-weight: 700;
+    color: white;
+}
+.heading_title h2{
+    margin: 5px;
+    padding: 8px;
+    width: fit-content;
+font-size: 2em;
+    color: white;
+	border: 5px solid white;
+    border-radius: 20px;
+}
+.heading_title h2:hover{
+   background-color: #FFD933; 
+   color: #374955;
+}
+.heading_title i{
+    color: white;
+    font-size: 35px;
+    margin: 20px;
+}
+.heading_title i:hover{
+    text-align: center;
+    background-color: white;
+    color: #374955;
+    padding: 10px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    transition: 0.1s;
+
+}
+
+.elements_list
+{
+    position: relative;
+    top: 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+.title{
+	display: flex;
+	align-self: center;
+	justify-self: center;
+}
+.title h1{
+	font-size: 15vh;
+	font-weight: 900;
+	color: white;
+	padding: 20px;
+	margin: 30px;
+}
+
+
+/*---------------transition-----------*/
+.cover {
+	position: fixed;
+	height: 200vw;
+	width: 200vw;
+	top: 200vw;
+	left: -200vw;
+	z-index: 1000;
+  }
+  .transition.slide .cover1 {
+	background-color: black;
+	border-radius: 50%;
+	animation: slide 0.3s ease-in-out forwards;
+  }
+  @keyframes slide {
+	0% {
+		width: 0;
+		height: 0;
+		bottom:0;
+	  left: 0;
+	  border-radius: 50%;
+	}
+	95%{
+		width: 100vh;
+		height: 100vh;
+		left:0;
+		border-radius: 50%;
+	}
+
+	100%{
+		width: 100vw;
+		height: 100vh;
+border-radius: 0;
+	  left: 0;
+	  top: 0;
+	}
+  }
+  
