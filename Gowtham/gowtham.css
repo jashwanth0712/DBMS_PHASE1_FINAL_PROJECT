@@ -221,7 +221,7 @@ ul {
     width: 300px;
     height: 300px;
     /* background-color: black; */
-    background: url("/imgs/pic2.jpg") no-repeat 1px / contain;
+    background: url("imgs/pic2.jpg") no-repeat 1px / contain;
 }
 
 .links-container a{
