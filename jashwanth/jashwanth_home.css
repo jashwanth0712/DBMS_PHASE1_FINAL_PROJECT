@@ -55,6 +55,22 @@ body,html{
 
 
 }
+ .skills_header ul li a
+{
+    font-size: 2vw;
+    font-weight: 600;
+    text-decoration: none;
+    padding: 6px 15px;
+    color: #ffffff;
+    border-radius:20px ;
+    z-index: 100;
+	margin: 2px;
+ background-color: black;
+	border: 5px solid white;
+
+
+
+}
 #header ul li a:hover,
 #header ul li a.active
 {
@@ -123,8 +139,11 @@ body,html{
 }
 
 /* -----------------ID card----------------------------- */
+.skills_header{
+	background-color: black;
+}
 #idcard_section{
-	/*background-color:rgba(153, 86, 86, 0.788);*/
+	background-color:#374955;
 	width: 100vw;
 	height: 100vh;
 }
@@ -137,8 +156,8 @@ body,html{
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	/*transform: rotate(-30deg) skew(25deg);
-	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3), 0 6px 20px 0 rgba(0, 0, 0, 0.29);*/
+	transform: rotate(-30deg) skew(25deg);
+	box-shadow: 0 16px 32px 0 rgba(0, 0, 0, 0.308), 0 6px 60px 0 rgba(0, 0, 0, 0.178); 
 }
 .border_green{
 	width: 97%;
