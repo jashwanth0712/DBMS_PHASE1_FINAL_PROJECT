@@ -166,6 +166,7 @@ body::after
 }
 .container .card .content img
 {
+    border-radius: 10px;
     position: absolute;
     top: -5%;
     right:30%;
