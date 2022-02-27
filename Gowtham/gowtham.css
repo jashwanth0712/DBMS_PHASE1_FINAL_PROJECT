@@ -77,7 +77,7 @@ ul {
 .profile-pic {
     width: 130px;
     height: 130px;
-    background: url("/imgs/pic1.jpg") 0 1px / cover;
+    background: url("imgs/pic1.jpg") 0 1px / cover;
     border-radius: 50%;
     border: 3px solid #fff;
 }
@@ -179,7 +179,7 @@ ul {
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
-        background: url("/imgs/pic2.jpg") no-repeat 1px / contain;
+        background: url("imgs/pic2.jpg") no-repeat 1px / contain;
     }
 
 }
