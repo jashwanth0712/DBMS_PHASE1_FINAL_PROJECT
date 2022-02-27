@@ -39,7 +39,7 @@ body,html{
     list-style: none;
     margin-left: px;
 }
-#header ul li a
+#header ul  a
 {
     font-size: 2vw;
     font-weight: 600;
@@ -55,33 +55,14 @@ body,html{
 
 
 }
- .skills_header ul li a
-{
-    font-size: 2vw;
-    font-weight: 600;
-    text-decoration: none;
-    padding: 6px 15px;
-    color: #ffffff;
-    border-radius:20px ;
-    z-index: 100;
-	margin: 2px;
- background-color: black;
-	border: 5px solid white;
-
-
-
-}
-#header ul li a:hover,
-#header ul li a.active
+#header ul  a:hover,
+#header ul  a.active
 {
     background:#F62A66;
     color: #374955;
 }
 
 /* -----------------ID card----------------------------- */
-.skills_header{
-	background-color: black;
-}
 #idcard_section{
 	background-color:#374955;
 	width: 100vw;
@@ -203,6 +184,18 @@ font-size: 2em;
     font-size: 35px;
     margin: 20px;
 }
+.heading_title i:hover{
+    text-align: center;
+    background-color: white;
+    color: #374955;
+    padding: 10px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    transition: 0.1s;
+
+}
+
 .elements_list
 {
     position: relative;
@@ -222,6 +215,8 @@ font-size: 2em;
 	padding: 20px;
 	margin: 30px;
 }
+
+
 /*---------------transition-----------*/
 .cover {
 	position: fixed;
