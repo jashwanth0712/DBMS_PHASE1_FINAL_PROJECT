@@ -1,0 +1,725 @@
+/* K SAI DINESH  ,  CS20B1122 */
+
+/* Exporting Stylish Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Acme&display=swap');
+
+/* Entire Navigation Bar styling */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+.navbar{
+    position: fixed;
+    width: 100%;
+    z-index: 999;
+    padding: 30px 0;
+    font-family: 'Ubuntu',sans-serif;
+    transition: all 0.3s ease;
+}
+
+.navbar.sticky{
+    padding: 30px 0;
+    background: crimson;
+}
+
+.navbar .logo{
+    font-size: 35px;
+    font-weight: 600;
+    color: white;
+}
+
+.navbar .logo span{
+    color: lime;
+    transition: all 0.3s ease;
+}
+
+.navbar.sticky .logo span{
+    color: gold;
+}
+
+
+.max-width{
+    /* width: 1300px; */
+    width: 100%;
+    padding: 0 80px;
+    margin: auto;
+}
+
+.navbar .max-width{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar .menu li{
+    list-style: none;
+    display: inline-block;
+}
+
+.navbar .menu li a{
+    color: white;
+    font-size: 24px;
+    font-weight: 500;
+    margin-left: 25px;
+    transition: color 0.3s ease;
+}
+
+.navbar .menu li a:hover{
+    color: chartreuse;
+    transition: all 0.3s ease;
+}
+
+.navbar.navbar.sticky .menu li a:hover{
+    color: chartreuse;
+}
+
+.menu-button{
+    position: absolute;
+    color: white;
+    font-size: 23px;
+    cursor: pointer;
+    display: none;
+}
+
+/* Entire Home Page styling */
+
+.home{
+    display: flex;
+    background: url("Profile Portfolio Background.jpg") no-repeat center;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 100vh;
+    color: white;
+    min-height: 500px;
+    font-family: 'Ubuntu',sans-serif;
+}
+
+.home .max-width{
+    margin: auto 0 auto 40px;
+}
+
+.home .home-content .text-1{
+    font-size: 29px;
+}
+
+.home .home-content .text-2{
+    font-size: 80px;
+    font-weight: 600;
+    margin-left: -3px;
+}
+
+.home .home-content .text-3{
+    font-size: 45px;
+    margin: 5px 0;
+}
+
+.home .home-content .text-3 span{
+    color: darkturquoise;
+    font-weight: 500;
+}
+
+/* Entire About Me Section and Interests Section Styling */
+
+section{
+    padding: 100px 0;
+}
+
+.about{
+    font-family: 'Poppins',sans-serif;
+    background: gray;
+    background: linear-gradient(-45deg, #EE7752, #E73C7E,rgba(0, 81, 255, 0.747) ,#23D5AB);
+    background-size: 400% 400%;
+    animation: Gradient 15s ease infinite;
+}
+
+.about .title , .skills .skills-title , .interests .interests-title , .team .team-title{
+    position: relative;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 500;
+    margin-bottom: 60px;
+    padding-bottom: 20px;
+    font-family: 'Ubuntu',sans-serif;
+}
+
+.about .title::before , .skills .skills-title::before , .interests .interests-title::before , .team .team-title::before{
+    content: "";
+    position: absolute;
+    text-align: center;
+    bottom: 0px;
+    left: 50%;
+    width: 300px;
+    height: 3px;
+    background: black;
+    transform: translateX(-50%);
+}
+
+.about .title::after{
+    content: "Hey There";
+    position: absolute;
+    text-align: center;
+    bottom: -10px;
+    left: 50%;
+    font-size: 20px;
+    color: crimson;
+    padding: 5px;
+    background: white;
+    transform: translateX(-50%);
+}
+
+.about .about-content , .interests .interests-content{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.about .about-content .left , .interests .interests-content .left{
+    width: 45%;
+}
+
+.about .about-content .left img , .interests .interests-content .left img{
+    height: 450px;
+    width: 450px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.about .about-content .right , .interests .interests-content .right{
+    width: 55%;
+}
+
+.about .about-content .right .about-text , .interests .interests-content .right .interests-text{
+    font-size: 25px;
+    font-weight: 600;
+    color: yellow;
+    margin-bottom: 10px;
+}
+
+.about .about-content .right .about-text span , .interests .interests-content .right .interests-text span{
+    color: springgreen;
+}
+
+.about .about-content .right p , .interests .interests-content .right p{
+    font-size: 25px;
+    color: white;
+    text-align: justify;
+}
+
+.about .about-content .right a{
+    display: inline-block;
+    background: crimson;
+    color: white;
+    font-size: 20px;
+    padding: 15px 35px;
+    margin-top: 20px;
+    border-radius: 6px;
+    border: 2px solid crimson;
+    transition: all 0.3s ease;
+}
+
+.about .about-content .right a:hover{
+    color: crimson;
+    background: white;
+}
+
+/* Entire Skills Section */
+
+.skills{
+    background: gray;
+    background: linear-gradient(to right, rgb(242, 112, 156), rgb(255, 148, 114));
+    background-size: 400% 400%;
+    animation: Gradient 15s ease infinite;
+}
+
+.skills .skills-content{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.skills .skills-content .skills-text{
+    font-family: 'Poppins',sans-serif;
+    color: yellow;
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.skills .skills-content .skills-text span{
+    color: chartreuse;
+}
+
+.skills .skills-content .left{
+    width: 55%;
+}
+
+.skills .skills-content .left p{
+    font-family: 'Poppins',sans-serif;
+    color: white;
+    font-size: 25px;
+    font-weight: 500;
+    text-align: justify;
+}
+
+.skills .skills-content .right{
+    width: 45%;
+}
+
+.skills .skills-content .right img{
+    transform: scale(0.85);
+    object-fit: cover;
+    border: 2px solid crimson;
+    border-radius: 6px;
+    margin-left: 30px;
+}
+
+/* Some Interests Section Styling */
+
+.interests{
+    font-family: 'Poppins',sans-serif;
+    background: gray;
+    background: linear-gradient(to right, #ff00ea, #ffb300, #f7797d);
+    background-size: 400% 400%;
+    animation: Gradient 15s ease infinite;
+}
+
+
+/* Team Section Styling */
+
+.team{
+    font-family: 'Poppins',sans-serif;
+    font-size: 25px;
+    font-weight: 500;
+    background: gray;
+    background: linear-gradient(to right, lightblue, lightgreen, aqua);
+    background-size: 400% 400%;
+    animation: Gradient 15s ease infinite;
+}
+
+.team .team-content{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.team .team-content .column{
+    margin-bottom: 75px;
+}
+
+.team .team-content p{
+    text-align: justify;
+}
+
+.team .team-content .left1{
+    width: 25%;
+}
+
+.team .team-content .right1{
+    width: 75%;
+}
+
+.team .team-content .left2{
+    width: 65%;
+}
+
+.team .team-content .right2{
+    width: 25%;
+    justify-content: right;
+}
+
+.team .team-content img{
+    border: 4px solid crimson;
+    border-radius: 50%;
+    transform: scale(1.2);
+}
+
+.team .team-content .individual-title{
+    font-family: 'Acme',sans-serif;
+    font-size: 40px;
+    font-weight: 600;
+    color: crimson;
+}
+
+.team .team-content .individual-title span{
+    color: orangered;
+}
+
+
+/* Contact Section Styling */
+
+.contact-me{
+    display: flex;
+    background: url("Contact Background.jpg") no-repeat center;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 100%;
+    color: white;
+    min-height: 500px;
+    font-family: 'Ubuntu',sans-serif;
+}
+
+.contact-me .contact-title h1{
+    margin-bottom: 30px;
+    color:aqua;
+    font-size: 60px;
+    font-weight: 700;
+    font-family: 'Ubuntu',sans-serif;
+}
+
+.contact-me .contact-content{
+    width: 55%;
+    font-size: 30px;
+    font-weight: 500;
+    font-family: 'Poppins',sans-serif;
+}
+
+.contact-me .contact-content ul{
+    list-style: none;
+}
+
+.contact-me .contact-content li{
+    display: inline-block;
+    margin: 20px 20px;
+    padding: 20px 20px;
+    border: 2px solid white;
+    border-radius: 50%;
+    transition: 0.5s;
+}
+
+.contact-me .contact-content li:hover:nth-child(1){
+    transform: translateY(-10px);
+    background: darkslategray;
+    color: white;
+}
+
+.contact-me .contact-content li:hover:nth-child(2){
+    transform: translateY(-10px);
+    background: red;
+    color: white;
+}
+
+.contact-me .contact-content li:hover:nth-child(3){
+    transform: translateY(-10px);
+    background: green;
+    color: white;
+}
+
+.contact-me .contact-content li:hover:nth-child(4){
+    transform: translateY(-10px);
+    background: chocolate;
+    color: white;
+}
+
+.contact-me .contact-content .profile-icons a{
+    text-decoration: none;
+    cursor: pointer;
+    color: white;
+}
+
+.contact-me .contact-content .profile-icons i{
+    transform: scale(1.5);
+}
+
+
+/* Responsive Touch */
+
+@media (max-width: 1400px){
+    .skills .skills-content .right img{
+        transform: scale(0.75);
+    }
+}
+
+@media (max-width: 1300px){
+    
+    .about .about-content .left , .interests .interests-content .left{
+        width: 30%;
+    }
+
+    .about .about-content .left img , .about .about-content .left img{
+        width: 350px;
+        height: 350px;
+    }
+
+    .skills .skills-content .right img{
+        transform: scale(0.70);
+    }
+
+    .team .team-content .right1{
+        width: 65%;
+    }
+
+    .contact-me .contact-content{
+        width: 100%;
+    }
+
+    .contact-me .contact-content li{
+        margin-top: 0px;
+        margin-bottom: 0px;
+    }
+}
+
+
+@media (max-width: 1104px){
+    .home .max-width{
+        margin-left: 0px;
+    }
+
+    .interests .interests-content .left img{
+        transform: translateX(-16%);
+    }
+
+    .skills .skills-content .left{
+        flex: 100%;
+    }
+
+    .skills .skills-content .right img{
+        transform: scale(0.85);
+    }
+}
+
+@media (max-width: 991px){
+    .max-width{
+        padding: 0 50px;
+    }
+
+    .skills .skills-content .column .right{
+        margin-left: -20px;
+    }
+
+    .skills .skills-content img{
+        width: 100%;
+        height: 100%;
+    }
+}
+
+
+@media (max-width:947px){
+    
+    .max-width{
+        padding: 0 50px;
+    }
+
+    .menu-button{
+        right: 50px;
+        display: block;
+        z-index: 999;
+    }
+
+    .navbar .menu{
+        position: fixed;
+        height: 100vh;
+        width: 100%;
+        left: -100%;
+        top: 0;
+        background: black;
+        text-align: center;
+        padding-top: 80px;
+        transition: all 0.3s ease;
+    }
+
+    .navbar .menu.active{
+        left: 0;
+    }
+
+    .navbar .menu li {
+        display: block;
+    }
+
+    .navbar .menu li a{
+        display: inline-block;
+        margin: 20px 0;
+        font-size: 25px;
+    }
+
+    .home .home-content .text-2{
+        font-size: 70px;
+    }
+    
+    .home .home-content .text-3{
+        font-size: 35px;
+    }
+
+    .max-width{
+        max-width: 800px;
+    }
+
+    .about .title{
+        font-size: 50px;
+    }
+
+    .about .title::after{
+        font-size: 25px;
+    }
+
+    .about .about-content .column{
+        width: 100%;
+    }
+
+    .about .about-content .left , .interests .interests-content .left{
+        display: flex;
+        justify-content: center;
+        margin: 0 auto 60px;
+    }
+
+    .interests .interests-content .left{
+        transform: translateX(35%);
+    }
+
+    .about .about-content .right , .interests .interests-content .right{
+        flex: 100%;
+    }
+
+    .team .team-content .right1{
+        flex: 100%;
+        font-size: 25px;
+    }
+
+    .skills .skills-content .left , .team .team-content .right2{
+        flex: 100%;
+    }
+
+    .team .team-content .left2{
+        flex: 100%;
+    }
+
+    .skills .skills-content .left p{
+        font-size: 25px;
+    }
+
+    .skills .skills-content .right img{
+        width: auto;
+        max-height: 100%;
+        transform: translate(0px,20px);
+    }
+
+    .contact-me .contact-content{
+        width: 100%;
+    }
+}
+
+@media (max-width:697px){
+    .home .home-content .text-2{
+        font-size: 60px;
+    }
+    
+    .home .home-content .text-3{
+        font-size: 30px;
+    }
+
+    .skills .skills-content .right img{
+        width: 200%;
+        max-height: 100%;
+        transform: translate(0px,20px);
+    }
+}
+
+@media (max-width: 500px){
+    .home .home-content .text-2{
+        font-size: 40px;
+    }
+    
+    .home .home-content .text-3{
+        font-size: 20px;
+    }
+
+    .about .title , .interests .interests-title{
+        font-size: 30px;
+        font-weight: 500;
+    }
+
+    .about .title::after{
+        font-size: 15px;
+    }
+    
+    .about .about-content .left img{
+        width: 300px;
+        height: 200px;
+        align-items: center;
+    }
+
+    .interests .interests-content .left img{
+        width: 300px;
+        height: 200px;
+        align-items: center;
+        transform: translateX(-10%);
+    }
+
+    .about .about-content .right p , .interests .interests-content .right p{
+        font-size: 15px;
+    }
+
+    .about .about-content .right a{
+        font-size: 15px;
+    }
+
+    .skills .skills-content .left p{
+        font-size: 15px;
+    }
+
+    .skills .skills-content .right img{
+        margin: 0;
+        width: 250%;
+        height: 250%;
+        transform: translate(-20px,15px);
+    }
+
+    .team .team-content img{
+        align-items: center;
+        transform: scale(1);
+    }
+    
+    .team .team-content .individual-title{
+        font-size: 30px;
+    }
+
+    .team .team-content .left1{
+        transform: translateX(25px);
+    }
+
+    .team .team-content .right1{
+        font-size: 20px;
+    }
+    
+    .team .team-content .left2{
+        font-size: 20px;
+        width: 100%;
+    }
+
+    .team .team-content .right2{
+        transform: translateX(25px);
+    }
+
+    .contact-me .contact-content{
+        width: 100%;
+    }
+    
+    .contact-me .contact-content p{
+        font-size: 15px;
+    }
+
+    .contact-me .contact-content li{
+        margin: -10px -8px;
+        transform: scale(0.65);
+    }
+}
+
+/* Transformations for Gradiented Background */
+@keyframes Gradient{
+    0%{
+        background-position: 0% 50%;
+    }
+    50%{
+        background-position: 100% 50%;
+    }
+    100%{
+        background-position: 0% 50%;
+    }
+}
